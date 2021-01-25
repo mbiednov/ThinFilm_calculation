@@ -22,3 +22,7 @@ The projects contains two files:
 ## Examples of usage
 More information on the code and examples of its usage can be found in the **Manual.pdf** in the **docs** folder.  
 In addition, the code (without the support of periodically repeating layers) is implemented in the Opal software, that can be found under https://github.com/mbiednov/opal/releases
+
+### example: a 100nm thin layer (index 2.22) sandwitched with air (index 1) and glass (index 1.52)
+The results are compared with FDTD
+![Comparasion with FDTD](https://github.com/MarkMa1990/ThinFilm_calculation/blob/working/docs/comparison.png)
