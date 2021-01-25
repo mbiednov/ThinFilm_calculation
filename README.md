@@ -24,5 +24,5 @@ More information on the code and examples of its usage can be found in the **Man
 In addition, the code (without the support of periodically repeating layers) is implemented in the Opal software, that can be found under https://github.com/mbiednov/opal/releases
 
 ### example: a 100nm thin layer (index 2.22) sandwitched with air (index 1) and glass (index 1.52)
-The results are compared with FDTD. Due to the increased time in simulating reflectity by FDTD, the example only compares the range of incidence angle from 0 to 40 deg.
+The results are compared with FDTD. Due to the increased time in simulating reflectity by FDTD, the example only compares the range of incidence angle from 0 to 40 deg. The wavelength is 632nm.
 ![Comparasion with FDTD](https://github.com/MarkMa1990/ThinFilm_calculation/blob/working/docs/comparison.png)
