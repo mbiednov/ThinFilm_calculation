@@ -8,7 +8,7 @@ void mexFunction(int nlhs, mxArray *plhs[],int nrhs,const mxArray *prhs[])
     double *inMatrix_thickness;       /* thickness of 1xN input matrix */
     double *outMatrix;              /* output matrix */
     
-    mexPrintf("the input accepts as: \nint NumberLayers, array n, array k, array thickness, double angleIncidence(deg), double wavelength(nm), bool P(true)_S(false)\n");
+    //mexPrintf("the input accepts as: \nint NumberLayers, array n, array k, array thickness, double angleIncidence(deg), double wavelength(nm), bool P(true)_S(false)\n");
     
     /* Check for proper number of input and output arguments */    
     if (nrhs != 7) {
@@ -33,10 +33,10 @@ void mexFunction(int nlhs, mxArray *plhs[],int nrhs,const mxArray *prhs[])
     int ncols_k = mxGetN(prhs[2]);
     int ncols_thickness = mxGetN(prhs[3]);
     
-    for (int i0=0;i0<ncols_n;i0++)
-    {
-        mexPrintf("%.2f\t%.2f\t%.2f\t\n",inMatrix_n[i0],inMatrix_k[i0],inMatrix_thickness[i0]);
-    }
+    //for (int i0=0;i0<ncols_n;i0++)
+    //{
+    //    mexPrintf("%.2f\t%.2f\t%.2f\t\n",inMatrix_n[i0],inMatrix_k[i0],inMatrix_thickness[i0]);
+    //}
     
     //
     double angleofIncidence = mxGetScalar(prhs[4]);

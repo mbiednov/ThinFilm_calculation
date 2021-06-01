@@ -27,6 +27,6 @@ hold on
 plot(angles, reflection_P*100,'g')
 plot(x_s(:,1), x_s(:,2),'b.')
 plot(x_p(:,1), x_p(:,2),'g.')
-xlim([8,71])
+%xlim([8,71])
 hold off
 legend('mex S','mex P','macleod S','macloed P')
