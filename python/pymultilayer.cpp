@@ -22,3 +22,15 @@ double Pymultilayer::calReflectivity(int numberOfLayers, double *n, int Nx1, dou
         
     return result;
 }
+
+double Pymultilayer::calTransmission(int numberOfLayers, double *n, int Nx1, double *k, int Nx2, double *thickness, int Nx3, double angleOfIncidence, double wavelength, bool pPolarized)
+{
+    double result = 0;
+    if(pPolarized==0)
+        result = calculateTransmission(numberOfLayers, n, k, thickness, angleOfIncidence, wavelength, false);
+    else
+        result = calculateTransmission(numberOfLayers, n, k, thickness, angleOfIncidence, wavelength, true);
+
+    return result;
+
+}
