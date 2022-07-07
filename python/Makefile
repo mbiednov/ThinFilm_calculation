@@ -1,7 +1,7 @@
 
-APPS = pymultilayer
+APPS=pymultilayer
 
-DEPENDENT_LIBS = ../multilayer.so
+DEPENDENT_LIBS=./multilayer.so
 
 PYTHON_DIR=/home/hongfeng/anaconda3/envs/thinfilm/include/python3.8
 NUMPY_DIR=/home/hongfeng/anaconda3/envs/thinfilm/lib/python3.8/site-packages/numpy/core/include/

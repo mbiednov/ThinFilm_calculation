@@ -9,6 +9,7 @@ ${APPS}.o: ${APPS}.cpp
 ${LIBAPPS}: ${APPS}.o
 	g++ -O3 -o $@ -shared $^
 	rm -r $^
+	mv ${LIBAPPS} python/
 
 clean:
 	rm -r ${LIBAPPS}
