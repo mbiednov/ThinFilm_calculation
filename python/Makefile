@@ -16,6 +16,12 @@ ALL:${APPS}
 
 	rm -r $@.o $@_wrap.o $@_wrap.cxx
 
+	mkdir pymultilayer
+	cp _$@.so pymultilayer
+	cp $@.py pymultilayer
+	cp ${DEPENDENT_LIBS} pymultilayer
+	cp test.py pymultilayer
+
 clean:
 	rm -r _${APPS}.so
 	rm -r $@.o $@_wrap.o $@_wrap.cxx
