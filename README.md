@@ -32,7 +32,7 @@ In addition, the code (without the support of periodically repeating layers) is 
 
 #### compile for Linux
 1. type "make" at the folder containing "multilayer.cpp", it would generate dependent lib into python folder
-2. enter python folder, change 
+2. enter python folder, change Makefile
 ```
 # COMPILING DEPENDENCY
 PYTHON_DIR=/home/username/anaconda3/envs/thinfilm/include/python3.8/ # CHANGE to your python path, I use conda
