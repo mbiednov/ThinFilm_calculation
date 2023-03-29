@@ -32,7 +32,7 @@ In addition, the code (without the support of periodically repeating layers) is 
 
 #### compile for Linux
 1. type "make" at the folder containing "multilayer.cpp", it would generate dependent lib into python folder
-2. enter python folder, change 
+2. enter python folder, change Makefile
 ```
 # COMPILING DEPENDENCY
 PYTHON_DIR=/home/username/anaconda3/envs/thinfilm/include/python3.8/ # CHANGE to your python path, I use conda
@@ -43,6 +43,7 @@ INSTALL_DIR=/home/username/anaconda3/envs/thinfilm/lib/python3.8/site-packages/ 
 ```
 
 
+=======
 The results are compared with FDTD. Due to the increased time in simulating reflectity by FDTD, the example only compares the range of incidence angle from 0 to 40 deg. The wavelength is 632nm.
 <p align="center">
 <img src="https://github.com/MarkMa1990/ThinFilm_calculation/blob/working/docs/comparison.png" width="70%" height="70%">
