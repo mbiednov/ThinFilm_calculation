@@ -30,6 +30,18 @@ In addition, the code (without the support of periodically repeating layers) is 
 3. for windows users: open visual studio and create a new project, copy "Pymultilayer_wrap.cxx", "pymultilayer.cpp", and "pymultilayer.h" into the project. compile them into a dll file. renamed the generated dll file as "\_pymultilayer.pyd". 
 4. for windows users: copy files of "pymultilayer.py" and "\_pymultilayer.pyd" into a new folder, these two files is a complete library.
 
+#### compile for Linux
+1. type "make" at the folder containing "multilayer.cpp", it would generate dependent lib into python folder
+2. enter python folder, change 
+```
+# COMPILING DEPENDENCY
+PYTHON_DIR=/home/username/anaconda3/envs/thinfilm/include/python3.8/ # CHANGE to your python path, I use conda
+NUMPY_DIR=/home/username/anaconda3/envs/thinfilm/lib/python3.8/site-packages/numpy/core/include/ # CHANGE to your numpy path
+
+# THE PYTHON LIBRARY YOU WANT TO BE INSTALLED
+INSTALL_DIR=/home/username/anaconda3/envs/thinfilm/lib/python3.8/site-packages/ # CHANGE to your python site-packages path
+```
+
 The results are compared with FDTD. Due to the increased time in simulating reflectity by FDTD, the example only compares the range of incidence angle from 0 to 40 deg. The wavelength is 632nm.
 <p align="center">
 <img src="https://github.com/MarkMa1990/ThinFilm_calculation/blob/working/docs/comparison.png" width="70%" height="70%">
