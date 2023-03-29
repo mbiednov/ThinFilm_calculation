@@ -24,7 +24,7 @@ More information on the code and examples of its usage can be found in the **Man
 In addition, the code (without the support of periodically repeating layers) is implemented in the Opal software, that can be found under https://github.com/mbiednov/opal/releases
 
 ### Python example: a 100nm thin layer (index 2.22) sandwitched with air (index 1) and glass (index 1.52)
-#### Compile:
+#### Compile for windows:
 1. install "swig" for python.
 2. open windows cmd or linux terminal and enter into the "python" folder, "swig -c++ -python pymultilayer.i". it will generate "Pymultilayer_wrap.cxx" and "pymultilayer.py".
 3. for windows users: open visual studio and create a new project, copy "Pymultilayer_wrap.cxx", "pymultilayer.cpp", and "pymultilayer.h" into the project. compile them into a dll file. renamed the generated dll file as "\_pymultilayer.pyd". 
@@ -42,6 +42,8 @@ NUMPY_DIR=/home/username/anaconda3/envs/thinfilm/lib/python3.8/site-packages/num
 INSTALL_DIR=/home/username/anaconda3/envs/thinfilm/lib/python3.8/site-packages/ # CHANGE to your python site-packages path
 ```
 
+
+=======
 The results are compared with FDTD. Due to the increased time in simulating reflectity by FDTD, the example only compares the range of incidence angle from 0 to 40 deg. The wavelength is 632nm.
 <p align="center">
 <img src="https://github.com/MarkMa1990/ThinFilm_calculation/blob/working/docs/comparison.png" width="70%" height="70%">
