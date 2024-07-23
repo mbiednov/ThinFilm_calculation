@@ -17,7 +17,7 @@ pymultilayer_module=Extension('_pymultilayer',
 
 setup(name="pymultilayer",
         version="0.1",
-        author="xxx",
+        author="Mykola Biednov, Hongfeng Ma, 2024",
         description="""pymultilayer module""",
         ext_modules=[pymultilayer_module],
         py_modules=["pymultilayer"],
