@@ -1,4 +1,5 @@
-from distutils.core import setup, Extension
+from setuptools import setup
+from distutils.core import Extension
 from setuptools import find_packages
 from distutils.sysconfig import get_python_inc
 
